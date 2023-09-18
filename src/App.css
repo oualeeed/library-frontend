@@ -1,0 +1,15 @@
+.nav-bar {
+  background-color: #999;
+  display: flex;
+}
+
+.nav-bar .link {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.nav-bar .link:hover {
+  color: #999;
+  background-color: white;
+}
