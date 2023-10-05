@@ -1,5 +1,6 @@
 import { useQuery } from '@apollo/client';
 import { ALL_AUTHORS } from '../graphql/queries';
+import SetAuthorBorn from './SetAuthorBorn';
 
 const AuthorsView = () => {
   const result = useQuery(ALL_AUTHORS);
@@ -29,6 +30,7 @@ const AuthorsView = () => {
           ))}
         </tbody>
       </table>
+      <SetAuthorBorn authors={result.data.allAuthors} />
     </>
   );
 };

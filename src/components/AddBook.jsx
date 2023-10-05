@@ -35,6 +35,7 @@ const AddBook = () => {
     title.reset();
     author.reset();
     published.reset();
+    setGenres([]);
   };
 
   return (
